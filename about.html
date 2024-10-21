@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8' />
+    <title>About Us</title>
+
+    <!-- to make sure the botostarp is responsive -->
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+
+    <!-- looding the bootstrap files -->
+    <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap.css' />
+
+    <!-- loodijng my own css file -->
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css' />
+
+</head>
+
+<body>
+    <section id="outer">
+        <!-- position-relative to be able to placethe text where we want -->
+        <section id="header-about" class="position-relative">
+            <!-- The navabr we use navabr-pill for the button look a like effect navbar-expand for the respovive behaviour -->
+            <nav class="navbar nav-pills navbar-expand-lg">
+                <div class=" container">
+
+                    <!-- we use the barnd for the logo as it is the only part that will remain as it -->
+                    <a class="navbar-brand fw-800" href="index.html">Alexandria</a>
+
+                    <!-- navbar-toggler to get the class that will use the js code to trigger the effects
+                     data-bs-target to choose the target and  data-bs-toggle to choose the the effect itself
+                    -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation">
+
+                        <!-- this span class to get the icon of the burger menu -->
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- collapse navbar-collapse for the collapse effect using the bootstrap -->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+                            <li class="nav-item"><a class="nav-link" href="history_pre.html">The History</a></li>
+
+                            <!-- we use nav-item as it is stil a nav item as a whole  and we use dropdown to trigger the dropdown effect that we need-->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  dropdown-toggle" role="button" data-bs-toggle="dropdown">
+                                    Services
+                                </a>
+
+                                <!-- the drop down menu  and its items -->
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="restaurant.html">Restaurants</a></li>
+                                    <li><a class="dropdown-item" href="cafe.html">Cafes</a></li>
+                                    <li><a class="dropdown-item" href="article.html">Articels</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+
+                            <li class="nav-item"><a class="nav-link active bg-black" href="about.html">About</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- The text of the header section-->
+            <div class="position-absolute start-50 translate-middle text-center text-white" id="hero-text">
+                <h1 class="display-1 fw-bold mb-3">About Us</h1>
+            </div>
+        </section>
+
+        <!-- This takes the whole row so the Col is 12 -->
+        <section class="p-5">
+            <div class="col-12">
+                <h3>Who Are We?</h3>
+
+                <p>We are a team of dedicated developers focused on delivering innovative and high-quality solutions to meet diverse client needs.</p>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-md-4 mb-4">
+                    <h3>Skills</h3>
+                    <ul class="list-unstyled">
+                        <li>HTML5, CSS3, JavaScript</li>
+                        <li>Angular.js</li>
+                        <li>Node.js</li>
+                        <li>Responsive Web Design</li>
+                        <li>UI/UX Design Principles</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <h3>Approach</h3>
+
+                    <p>We believe in creating websites that not only look great but also provide an intuitive user experience.
+                    </p>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <h3>Vision</h3>
+
+                    <p>Our goal is to continue pushing the boundaries of web development, creating immersive online experiences that educate, inspire, and connect people with the rich cultural heritage of places like Alexandria.
+                    </p>
+                </div>
+            </div>
+
+            <!-- This takes the whole row so the Col is 12 -->
+            <div class="row mt-4">
+                <div class="col-12">
+                    <h3>Why Did We Created This Website</h3>
+                    <p>We created this site to provide efficient solutions and enhance user experiences in a simple and accessible way.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Footer Section -->
+        <section class="bg-black text-light py-4" style="height: fit-content;" id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5 class="mb-3">Quick Links</h5>
+
+                        <ul class="list-unstyled">
+                            <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+
+                            <li><a href="history_pre.html" class="text-light text-decoration-none">The History</a></li>
+
+                            <li><a href="restaurant.html" class="text-light text-decoration-none">Restaurants</a></li>
+
+                            <li><a href="cafe.html" class="text-light text-decoration-none">Cafes</a></li>
+
+                            <li><a href="article.html" class="text-light text-decoration-none">Articels</a></li>
+
+                            <li><a href="contact.html" class="text-light text-decoration-none">Contact Us</a></li>
+
+                            <li><a href="#header-about" class="text-light text-decoration-none">About Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h5 class="mb-3">Contact Us</h5>
+                        <p class="small mb-0">Alexandria, Egypt</p>
+                        <p class="small mb-0">Phone: (+20) Some Number</p>
+                        <p class="small mb-0">Email: info@example.com</p>
+                    </div>
+                </div>
+
+                <hr class="my-4 bg-secondary" />
+
+                <p class="text-center">
+                    &copy; 2024 Your Company Name. All rights reserved.
+                </p>
+            </div>
+        </section>
+
+
+        <!-- <p class="lead mb-4 display-6">We Are a Small Alexandrian Developers Team Seeking To Make Alexandria The
+            Most Famous City In The World Again</p> -->
+    </section>
+
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

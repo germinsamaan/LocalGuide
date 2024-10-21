@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8' />
+    <title>Articles - Alexandria</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap.css' />
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/article.css">
+
+</head>
+
+<body>
+    <!-- navbarrrr beg -->
+    <!-- The navabr we use navabr-pill for the button look a like effect navbar-expand for the respovive behaviour -->
+
+    <section class="home" id="home">
+        <navabr class="navbar nav-pills navbar-expand-lg">
+            <div class=" container">
+                <!-- we use the barnd for the logo as it is the only part that will remain as it -->
+                <a class="navbar-brand fw-800" href="index.html">Alexandria</a>
+
+                <!-- navbar-toggler to get the class that will use the js code to trigger the effects
+                 data-bs-target to choose the target and  data-bs-toggle to choose the the effect itself
+                -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation">
+
+                    <!-- this span class to get the icon of the burger menu -->
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- collapse navbar-collapse for the collapse effect using the bootstrap -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="history_pre.html">The History</a></li>
+
+                        <!-- we use nav-item as it is stil a nav item as a whole  and we use dropdown to trigger the dropdown effect that we need-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle active bg-black" role="button"
+                                data-bs-toggle="dropdown">
+                                Services
+                            </a>
+
+                            <!-- the drop down menu  and its items -->
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="restaurant.html">Restaurants</a></li>
+                                <li><a class="dropdown-item" href="cafe.html">Cafes</a></li>
+                                <li><a class="dropdown-item" href="#home">Articels</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </navabr>
+        <!-- navbarrrrrrrrrrrrrrrrrrrrrrrrrrrrr end -->
+        <div class="home-text container"></div>
+        <h1 class="home-title">The City Of Alexandria</h1>
+    </section>
+
+    <!-- articles filtering -->
+    <div class="articles-filter container">
+        <span class="filter-item active-filter" data-filter='all'>ALL</span>
+        <span class="filter-item " data-filter='history'>History</span>
+        <span class="filter-item " data-filter='activities'>Activities</span>
+        <span class="filter-item " data-filter='facts'>Facts & Culture</span>
+    </div>
+    <!-- articles -->
+    <section class="article container">
+        <!-- article box 1 history: qaitbay -->
+        <div class="article-box history">
+            <img src="imgs/Article/dilip-poddar-26Ptlg0fn8w-unsplash.jpg" alt="qaitbay citadel" class="article-img">
+            <h2 class="category">History</h2>
+            <a href="article-page.html" class="article-title">
+                The Citadel of Qaitbay
+            </a>
+            <span class="article-date">15 May 2022</span>
+            <p class="article-description">The Qaitbay Citadel in Alexandria is considered one of the most important
+                defensive strongholds, not only in Egypt, but also along the Mediterranean Sea coast. It formulated an
+                important part of the fortification system of Alexandria in the 15th century AD</p>
+            <!-- author profile -->
+            <div class="profile">
+                <img src="imgs/Article/profile-1.jpg" alt="" class="profile-img">
+                <span class="profile-name">Author Name</span>
+            </div>
+        </div>
+        <!-- article box 2 activities: Alexandria's Beaches and Coastal Life -->
+        <div class="article-box activities">
+            <img src="imgs/Article/ahmed-zaki-3X2WyHGADWc-unsplash.jpg" alt="Alexandria's Beaches " class="article-img">
+            <h2 class="category">Activities</h2>
+            <a href="article-page.html" class="article-title">
+                Alexandria's Beaches
+            </a>
+            <span class="article-date">15 May 2022</span>
+            <p class="article-description">Alexandria is distinguished with its beaches from Al-Ma'amora eastern to
+                Al-Agamy at the west, with about 24 km long, and due to its perfect geographic location and its natural
+                resources it became the largest port in the Mediterranean and the Middle East</p>
+
+            <!-- author profile -->
+            <div class="profile">
+                <img src="imgs/Article/profile-2.jpg" alt="" class="profile-img">
+                <span class="profile-name">Author Name</span>
+            </div>
+        </div>
+        <!-- article box 3  Facts & Culture: transportations -->
+        <div class="article-box facts">
+            <img src="imgs/Article/noel-schlafli-0DSG8vxJDf8-unsplash.jpg" alt="transportations" class="article-img">
+            <h2 class="category">Facts & Culture</h2>
+            <a href="article-page.html" class="article-title">
+                Transportations
+            </a>
+            <span class="article-date">15 May 2022</span>
+            <p class="article-description">Alexandria is linked to other Egyptian cities by railway, road, and air
+                service. It also is connected by canal with the Nile. Transport within the city is provided by tram
+                service, as well as a system of taxis and buses.</p>
+            <!-- author profile -->
+            <div class="profile">
+                <img src="imgs/Article/profile-2.jpg" alt="" class="profile-img">
+                <span class="profile-name">Author Name</span>
+            </div>
+        </div>
+        <!-- article box 4 history: Library of Alexandria -->
+        <div class="article-box history">
+            <img src="imgs/Article/abdallah-rn2_Dyce9Vw-unsplash.jpg" alt="Library of Alexandria" class="article-img">
+            <h2 class="category">History</h2>
+            <a href="article-page.html" class="article-title">
+                Library of Alexandria
+            </a>
+            <span class="article-date">15 May 2022</span>
+            <p class="article-description">The Library of Alexandria, founded in the 3rd century BCE, was one of the
+                ancient world's largest and most significant centers of learning, aiming to collect all known knowledge.
+                It housed hundreds of thousands of scrolls and attracted renowned scholars, contributing greatly to
+                fields such as mathematics, astronomy, and literature. The library ultimately declined and was lost to
+                history, symbolizing the fragility of human knowledge and cultural achievement.</p>
+            <!-- author profile -->
+            <div class="profile">
+                <img src="imgs/Article/profile-1.jpg" alt="" class="profile-img">
+                <span class="profile-name">Author Name</span>
+            </div>
+        </div>
+        <!-- article box 5 activities: souqs & shopping -->
+        <div class="article-box activities">
+            <img src="imgs/Article/photo-1569531955317-390fbbc73f17.avif" alt="souqs & shopping" class="article-img">
+            <h2 class="category">Activities</h2>
+            <a href="article-page.html" class="article-title">
+                souqs & shopping
+            </a>
+            <span class="article-date">15 May 2022</span>
+            <p class="article-description">Shopping in Alexandria, Egypt, offers a vibrant mix of traditional markets
+                and modern malls, providing a unique experience for visitors. The famous Souk El-Attarine is known for
+                its aromatic spices, handmade crafts, and local delicacies, while the Alexandria City Centre features a
+                variety of international brands and dining options. Shoppers can enjoy bargaining in the bustling
+                bazaars or exploring contemporary retail spaces, making it a diverse destination for all tastes.</p>
+
+            <!-- author profile -->
+            <div class="profile">
+                <img src="imgs/Article/profile-1.jpg" alt="" class="profile-img">
+                <span class="profile-name">Author Name</span>
+            </div>
+        </div>
+        <!-- article box 6 Facts & Culture: fastivals & events -->
+        <div class="article-box facts">
+            <img src="imgs/Article/abdullah-ali-cD4Ix4i1HZ8-unsplash.jpg" alt="fastivals & events" class="article-img">
+            <h2 class="category">Facts & Culture</h2>
+            <a href="article-page.html" class="article-title">
+                fastivals & events
+            </a>
+            <span class="article-date">15 May 2022</span>
+            <p class="article-description">Alexandria, Egypt, hosts a variety of vibrant festivals and events that
+                celebrate its rich cultural heritage. The Alexandria International Film Festival showcases cinematic
+                talent from around the world, attracting filmmakers and audiences alike. Additionally, the city's annual
+                Mediterranean Music Festival highlights local and international musicians, creating a lively atmosphere
+                that brings the community together.2</p>
+            <!-- author profile -->
+            <div class="profile">
+                <img src="imgs/Article/profile-2.jpg" alt="" class="profile-img">
+                <span class="profile-name">Author Name</span>
+            </div>
+        </div>
+        <!-- article box 7 facts & culture: Geography & weather -->
+        <div class="article-box facts">
+            <img src="imgs/Article/amadeomoussa-ahmed-2zut0TS_XoA-unsplash.jpg" alt="Geography & weather"
+                class="article-img">
+            <h2 class="category">facts & culture</h2>
+            <a href="article-page.html" class="article-title">
+                Geography & weather
+            </a>
+            <span class="article-date">15 May 2022</span>
+            <p class="article-description">Alexandria, Egypt, is situated on the Mediterranean coast, characterized by
+                its beautiful beaches and a rich natural harbor. The city enjoys a Mediterranean climate, featuring hot,
+                dry summers and mild, wet winters, with average temperatures ranging from 10°C (50°F) in winter to 30°C
+                (86°F) in summer. Its geographical location contributes to a unique blend of cultural influences, shaped
+                by both its coastal environment and historical trade routes.</p>
+
+            <!-- author profile -->
+            <div class="profile">
+                <img src="imgs/Article/profile-1.jpg" alt="" class="profile-img">
+                <span class="profile-name">Author Name</span>
+            </div>
+        </div>
+        <!-- article box 8 Facts & Culture: name of alexandria -->
+        <div class="article-box facts">
+            <img src="imgs/Article/download.png" alt="name of alexandria" class="article-img">
+            <h2 class="category">Facts & Culture</h2>
+            <a href="article-page.html" class="article-title">
+                Name of Alexandria
+            </a>
+            <span class="article-date">15 May 2022</span>
+            <p class="article-description">The city of Alexandria, Egypt, was founded by Alexander the Great in 331 BCE
+                and named in his honor. It quickly became a major center of culture and learning in the ancient world,
+                known for its famous library and lighthouse. Over the centuries, the name Alexandria has come to
+                symbolize the city's rich historical heritage and its role as a crossroads of civilizations.</p>
+            <!-- author profile -->
+            <div class="profile">
+                <img src="imgs/Article/profile-1.jpg" alt="" class="profile-img">
+                <span class="profile-name">Author Name</span>
+            </div>
+        </div>
+        <!-- article box 9 history: Museums in Alexandria -->
+        <div class="article-box history">
+            <img src="imgs/Article/photo-1604094075124-134da01c3f8a.avif" alt="Museums in Alexandria"
+                class="article-img">
+            <h2 class="category">History</h2>
+            <a href="article-page.html" class="article-title">
+                Museums in Alexandria
+            </a>
+            <span class="article-date">15 May 2022</span>
+            <p class="article-description">Alexandria is home to several fascinating museums that showcase its rich
+                history and cultural heritage. The Alexandria National Museum features a diverse collection of artifacts
+                from ancient Egypt to the modern era, highlighting the city's significance through the ages.
+                Additionally, the Royal Jewelry Museum, housed in a former palace, displays exquisite jewelry and
+                artifacts belonging to the Muhammad Ali Dynasty, offering a glimpse into the opulence of Egypt's royal
+                past.</p>
+            <!-- author profile -->
+            <div class="profile">
+                <img src="imgs/Article/profile-2.jpg" alt="" class="profile-img">
+                <span class="profile-name">Author Name</span>
+            </div>
+        </div>
+
+    </section>
+    <!-- footer section -->
+    <!-- The Footer Section -->
+    <section class="bg-black text-light py-4" style="height: fit-content;" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5 class="mb-3">About Us</h5>
+                    <p class="small">We are a company dedicated to providing excellent services and products to our
+                        customers.
+                    </p>
+                </div>
+
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5 class="mb-3">Quick Links</h5>
+
+                    <ul class="list-unstyled">
+                        <li><a href="#header-home" class="text-light text-decoration-none">Home</a></li>
+
+                        <li><a href="history_pre.html" class="text-light text-decoration-none">The History</a></li>
+
+                        <li><a href="restaurant.html" class="text-light text-decoration-none">Restaurants</a></li>
+
+                        <li><a href="cafe.html" class="text-light text-decoration-none">Cafes</a></li>
+
+                        <li><a href="#home" class="text-light text-decoration-none">Articels</a></li>
+
+                        <li><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+
+                        <li><a href="about.html" class="text-light text-decoration-none">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <h5 class="mb-3">Contact Us</h5>
+                    <p class="small mb-0">Alexandria, Egypt</p>
+                    <p class="small mb-0">Phone: (+20) Some Number</p>
+                    <p class="small mb-0">Email: info@example.com</p>
+                </div>
+            </div>
+
+            <hr class="my-4 bg-secondary" />
+
+            <p class="text-center">
+                &copy; 2024 Your Company Name. All rights reserved.
+            </p>
+        </div>
+    </section>
+    <!-- footer end -->
+
+    <!-- jquery link -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <!-- link to js -->
+    <script src="js/article.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

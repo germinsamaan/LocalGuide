@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8' />
+    <title>Restaurants</title>
+
+    <!-- to make sure the botostarp is responsive -->
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+
+    <!-- looding the bootstrap files -->
+    <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap.css' />
+
+    <!-- loodijng my own css file -->
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css' />
+
+</head>
+
+<body>
+    <section id="container">
+        <!-- position-relative to be able to placethe text where we want -->
+        <section id="header-restaurant" class="position-relative">
+            <!-- The navabr we use navabr-pill for the button look a like effect navbar-expand for the respovive behaviour -->
+            <navabr class="navbar nav-pills navbar-expand-lg">
+                <div class=" container">
+
+                    <!-- we use the barnd for the logo as it is the only part that will remain as it -->
+                    <a class="navbar-brand fw-800" href="index.html">Alexandria</a>
+
+                    <!-- navbar-toggler to get the class that will use the js code to trigger the effects
+                     data-bs-target to choose the target and  data-bs-toggle to choose the the effect itself
+                    -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation">
+
+                        <!-- this span class to get the icon of the burger menu -->
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- collapse navbar-collapse for the collapse effect using the bootstrap -->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+                            <li class="nav-item"><a class="nav-link" href="history_pre.html">The History</a></li>
+
+                            <!-- we use nav-item as it is stil a nav item as a whole  and we use dropdown to trigger the dropdown effect that we need-->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  dropdown-toggle active bg-black" role="button"
+                                    data-bs-toggle="dropdown">
+                                    Services
+                                </a>
+
+                                <!-- the drop down menu  and its items -->
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="restaurant.html">Restaurants</a></li>
+                                    <li><a class="dropdown-item" href="cafe.html">Cafes</a></li>
+                                    <li><a class="dropdown-item" href="article.html">Articels</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+
+                            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </navabr>
+
+            <!-- The text of the header section-->
+            <div class="position-absolute start-50 translate-middle text-center text-white" id="hero-text">
+                <h1 class="display-1 fw-bold mb-3">Restaurents</h1>
+            </div>
+        </section>
+
+        <!-- The Histroical Places Section y shbab -->
+        <section class="heritage-section p-5" id="oriantles">
+            <div class="container p-3">
+                <h2 class="section-title m-auto mb-5 text-black">Our Recommendations</h2>
+
+                <!-- diving the the section into one row so that we can align items Easily -->
+                <div class="row">
+                    <!-- diving the cols into 4 mids -->
+                    <div class="col-md-4 mt-3">
+                        <!-- using the card to get a card and place-card for animations-->
+                        <div class="card place-card h-100">
+                            <img src="imgs/restaurant/5eff48_401ff9be1ffd41fe8ffb0bfeaeecbf96~mv2.webp"
+                                class="card-img-top" alt="Greek Club" />
+
+                            <div class="card-body">
+                                <h5 class="card-title">Greek Club</h5>
+                                <p class="card-text mb-5">Greek Club is by far one of the most well-known restaurants in
+                                    Alexandria, and for good reason -- the view over the Alexandrian harbor is second to
+                                    none. </p>
+
+                                <a href="Restaurant_page.html" class="btn btn-dark position-absolute" id="bot-btn">Full
+                                    Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Repeating the card -->
+                    <div class="col-md-4 mt-3">
+                        <div class="card place-card h-100">
+                            <img src="imgs/restaurant/5eff48_d73ebad90c434bb682c0dcc6a08cb659~mv2.webp"
+                                class="card-img-top" alt="Chez Gaby" />
+
+                            <div class="card-body">
+                                <h5 class="card-title">Chez Gaby
+                                </h5>
+                                <p class="card-text mb-5">A cozy taverna-style restaurant off of Fouad street, Chez Gaby
+                                    au
+                                    Ritrovo has been open since 1979 and they serve pizza, pasta and other Italian
+                                    classics. They also serve wine and beer to enjoy with your meal.
+                                </p>
+
+                                <a href="Restaurant_page.html" class="btn btn-dark position-absolute" id="bot-btn">Full
+                                    Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Repeating the card -->
+                    <div class="col-md-4 mt-3">
+                        <div class="card place-card h-100">
+                            <img src="imgs/Caffe/tac-roof-is-a-premier.jpg" class="card-img-top" alt="Tac Roof" />
+
+                            <div class="card-body">
+                                <h5 class="card-title">Tac Roof</h5>
+                                <p class="card-text mb-5">Tac Roof is a premier restaurant and lounge serving only the
+                                    finest
+                                    cuisine and drinks Our restaurant can be the perfect setting for business dinners,
+                                    girl's night out, dates, family events .</p>
+
+                                <a href="Restaurant_page.html" class="btn btn-dark position-absolute" id="bot-btn">Full
+                                    Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The section about the restaurants is the same as the last one but with a twist ahahahahahah -->
+        <!-- The Histroical Places Section y shbab -->
+        <section class="heritage-section p-5" id="history">
+            <div class="container p-3">
+                <h2 class="section-title m-auto mb-5">Find a Restaurant</h2>
+
+                <!-- using the card to get a card and place-card for animations-->
+                <div class="card place-card h-100">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="imgs/restaurant/5eff48_18a0e14d0ded41b7a4fa4b243821d99a~mv2.webp"
+                                class="card-img-top" alt="Teatro Eskendria" />
+                        </div>
+
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Teatro Eskendria </h5>
+                                <p class="card-text">Teatro is not only a restaurant and cafe that serves up classic
+                                    Egyptian favorites, from breakfast to feteer to tagens to casseroles, but it's
+                                    also
+                                    a cultural center and art space. Owned by a group of artists, you can find
+                                    Teatro in
+                                    an Italian-built building dating back to 1928.</p>
+                                <a href="Restaurant_page.html" class="btn btn-dark">Full Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Repeat The Card>-->
+                <div class="card place-card h-100">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="imgs/restaurant/5eff48_95394527a1db4d7e9b4292d9bf630155~mv2.webp"
+                                class="card-img-top" alt="Negro" />
+                        </div>
+
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Negro</h5>
+                                <p class="card-text">While the restaurant's name is an unfortunate choice, deciding
+                                    to
+                                    eat there is not. This place has been open since 1987 but only recently have
+                                    people
+                                    outside of Alexandrian locals started to recognize it for the hidden gem it is.
+                                </p>
+                                <a href="Restaurant_page.html" class="btn btn-dark">Full Details</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card place-card h-100">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="imgs/restaurant/5eff48_93f94ae387874526861df9c15fd2d7bc~mv2.webp"
+                                class="card-img-top" alt="Farag Abou Khaled" />
+                        </div>
+
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title"> Farag Abou Khaled</h5>
+                                <p class="card-text">This place has two branches: the original branch is where you
+                                    go
+                                    for the more authentic street food experience, but keep in mind it's neither
+                                    fancy
+                                    nor sparkling clean -- you’ll basically be eating on haphazard tables and chairs
+                                    on
+                                    the sidewalk.</p>
+                                <a href="Restaurant_page.html" class="btn btn-dark">Full Details</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Footer Section -->
+        <section class="bg-black text-light py-4" style="height: fit-content;" id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <h5 class="mb-3">About Us</h5>
+                        <p class="small">We are a company dedicated to providing excellent services and products to our
+                            customers.
+                        </p>
+                    </div>
+
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <h5 class="mb-3">Quick Links</h5>
+
+                        <ul class="list-unstyled">
+                            <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+
+                            <li><a href="history.html" class="text-light text-decoration-none">The History</a></li>
+
+                            <li><a href="#header-restaurant" class="text-light text-decoration-none">Restaurants</a>
+                            </li>
+
+                            <li><a href="cafe.html" class="text-light text-decoration-none">Cafes</a></li>
+
+                            <li><a href="article.html" class="text-light text-decoration-none">Articels</a></li>
+
+                            <li><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+
+                            <li><a href="about.html" class="text-light text-decoration-none">About</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h5 class="mb-3">Contact Us</h5>
+                        <p class="small mb-0">Alexandria, Egypt</p>
+                        <p class="small mb-0">Phone: (+20) Some Number</p>
+                        <p class="small mb-0">Email: info@example.com</p>
+                    </div>
+                </div>
+
+                <hr class="my-4 bg-secondary" />
+
+                <p class="text-center">
+                    &copy; 2024 Your Company Name. All rights reserved.
+                </p>
+            </div>
+        </section>
+    </section>
+
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

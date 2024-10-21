@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8' />
+    <title>Cafes</title>
+
+    <!-- to make sure the botostarp is responsive -->
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+
+    <!-- looding the bootstrap files -->
+    <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap.css' />
+
+    <!-- loodijng my own css file -->
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css' />
+
+</head>
+
+<body>
+    <section id="container">
+        <!-- position-relative to be able to placethe text where we want -->
+        <section id="header-cafe" class="position-relative">
+            <!-- The navabr we use navabr-pill for the button look a like effect navbar-expand for the respovive behaviour -->
+            <navabr class="navbar nav-pills navbar-expand-lg">
+                <div class=" container">
+
+                    <!-- we use the barnd for the logo as it is the only part that will remain as it -->
+                    <a class="navbar-brand fw-800" href="index.html">Alexandria</a>
+
+                    <!-- navbar-toggler to get the class that will use the js code to trigger the effects
+                     data-bs-target to choose the target and  data-bs-toggle to choose the the effect itself
+                    -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation">
+
+                        <!-- this span class to get the icon of the burger menu -->
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- collapse navbar-collapse for the collapse effect using the bootstrap -->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+                            <li class="nav-item"><a class="nav-link" href="history_pre.html">The History</a></li>
+
+                            <!-- we use nav-item as it is stil a nav item as a whole  and we use dropdown to trigger the dropdown effect that we need-->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  dropdown-toggle active bg-black" role="button"
+                                    data-bs-toggle="dropdown">
+                                    Services
+                                </a>
+
+                                <!-- the drop down menu  and its items -->
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="restaurant.html">Restaurants</a></li>
+                                    <li><a class="dropdown-item" href="cafe.html">Cafes</a></li>
+                                    <li><a class="dropdown-item" href="article.html">Articels</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+
+                            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </navabr>
+
+            <!-- The text of the header section-->
+            <div class="position-absolute start-50 translate-middle text-center text-white" id="hero-text">
+                <h1 class="display-1 fw-bold mb-3">Cafes</h1>
+            </div>
+        </section>
+
+        <!-- The Histroical Places Section y shbab -->
+        <section class="heritage-section p-5" id="oriantles">
+            <div class="container p-3">
+                <h2 class="section-title m-auto mb-5">Recommended</h2>
+
+                <!-- diving the the section into one row so that we can align items Easily -->
+                <div class="row">
+                    <!-- diving the cols into 4 mids -->
+                    <div class="col-md-4">
+                        <!-- using the card to get a card and place-card for animations-->
+                        <div class="card place-card h-100">
+                            <img src="imgs/Caffe/terrace.jpg" class="card-img-top" alt="Alexandria National Museum" />
+
+                            <div class="card-body">
+                                <h5 class="card-title">Delices</h5>
+                                <p class="card-text">Founded in 1907, Delices was officially established in 1922 with
+                                    the vision of providing Delicious Delicacies! This piece of cosmopolitan history is
+                                    still owned and managed by the same family! </p>
+                                <a href="cafe_page.html" class="btn btn-dark position-absolute">Full Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Repeating the card -->
+                    <div class="col-md-4">
+                        <div class="card place-card h-100">
+                            <img src="imgs/Caffe/place.jpg" class="card-img-top" alt="Bibliotheca Alexandrina" />
+
+                            <div class="card-body">
+                                <h5 class="card-title">PuffyPops</h5>
+                                <p class="card-text">TSpreading JOY through our signature PuffyPops dessert. We offer a
+                                    varieties of dessert such as: Cookies, Cheesecakes, etc.. Beverages: Coffee,
+                                    Milkshakes, Ice Tea, etc..</p>
+                                <a href="cafe_page.html" class="btn btn-dark position-absolute">Full Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Repeating the card -->
+                    <div class="col-md-4">
+                        <div class="card place-card h-100">
+                            <img src="imgs/Caffe/tac-roof-is-a-premier.jpg" class="card-img-top" alt="Fort Qaitbey" />
+
+                            <div class="card-body">
+                                <h5 class="card-title">Tac Roof</h5>
+                                <p class="card-text">ac Roof is a premier restaurant and lounge serving only the finest
+                                    cuisine and drinks Our restaurant can be the perfect setting for business dinners,
+                                    girl's night out, dates, family events .</p>
+                                <a href="cafe_page.html" class="btn btn-dark position-absolute">Full Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The section about the restaurants is the same as the last one but with a twist ahahahahahah -->
+        <!-- The Histroical Places Section y shbab -->
+        <section class="heritage-section p-5" id="history">
+            <div class="container p-3">
+                <h2 class="section-title m-auto mb-5">Find a Cafe</h2>
+
+                <!-- using the card to get a card and place-card for animations-->
+                <div class="card place-card h-100">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="imgs/Caffe/about_20230101213614.jpg" class="card-img-top" alt="Carlos Cafe" />
+                        </div>
+
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Carlos Cafe</h5>
+                                <p class="card-text">Carlos Cafe is a casual and straightforward coffee Shop and
+                                    restaurant that offers high-quality service to its customers. Remarkably, it is the
+                                    first established coffee shop of its kind in this city. </p>
+                                <a href="cafe_page.html" class="btn btn-dark position-absolute">Full Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Repeat The Card>-->
+                <div class="card place-card h-100">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="imgs/Caffe/IMG20230101192704_20230101213921.jpg" class="card-img-top"
+                                alt="Trianon" />
+                        </div>
+
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Trianon</h5>
+                                <p class="card-text">Unquestionably, Trianon Cafe is one of the most lavish cafés in
+                                    Alexandria. It is snuggled on the seafront side of the Le Metropole Hotel on the
+                                    Corniche. </p>
+                                <a href="cafe_page.html" class="btn btn-dark position-absolute">Full Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card place-card h-100">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="imgs/Caffe/3200243465670485785894285318836135632232924n_20230101214059.jpg"
+                                class="card-img-top" alt="elices Patisserie Alexandria" />
+                        </div>
+
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Delices Patisserie Alexandria</h5>
+                                <p class="card-text">Délices Patisserie Alexandria is a historical cafe and patisserie
+                                    with a glorious history of over 100 years. Served by the same family since 1922, it
+                                    offers scrumptious pastries, cakes.</p>
+                                <a href="cafe_page.html" class="btn btn-dark position-absolute">Full Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Footer Section -->
+        <section class="bg-black text-light py-4" style="height: fit-content;" id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <h5 class="mb-3">About Us</h5>
+                        <p class="small">We are a company dedicated to providing excellent services and products to our
+                            customers.
+                        </p>
+                    </div>
+
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <h5 class="mb-3">Quick Links</h5>
+
+                        <ul class="list-unstyled">
+                            <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+
+                            <li><a href="history_pre.html" class="text-light text-decoration-none">The History</a></li>
+
+                            <li><a href="restaurant.html" class="text-light text-decoration-none">Restaurants</a>
+                            </li>
+
+                            <li><a href="#header-cafe" class="text-light text-decoration-none">Cafes</a></li>
+
+                            <li><a href="article.html" class="text-light text-decoration-none">Articels</a></li>
+
+                            <li><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+
+                            <li><a href="about.html" class="text-light text-decoration-none">About</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h5 class="mb-3">Contact Us</h5>
+                        <p class="small mb-0">Alexandria, Egypt</p>
+                        <p class="small mb-0">Phone: (+20) Some Number</p>
+                        <p class="small mb-0">Email: info@example.com</p>
+                    </div>
+                </div>
+
+                <hr class="my-4 bg-secondary" />
+
+                <p class="text-center">
+                    &copy; 2024 Your Company Name. All rights reserved.
+                </p>
+            </div>
+        </section>
+
+        <script src="js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8' />
+    <title>Contact Us</title>
+
+    <!-- Ensure Bootstrap is responsive -->
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+
+    <!-- Loading the Bootstrap files -->
+    <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap.css' />
+
+    <!-- Loading the custom CSS file -->
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css' />
+</head>
+
+<body>
+    <section id="outer">
+        <!-- Header Section -->
+        <section id="header-contact" class="position-relative">
+            <!-- The navbar -->
+            <nav class="navbar nav-pills navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand fw-800" href="index.html">Alexandria</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="history_pre.html">The History</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">
+                                    Services
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="restaurant.html">Restaurants</a></li>
+                                    <li><a class="dropdown-item" href="cafe.html">Cafes</a></li>
+                                    <li><a class="dropdown-item" href="article.html">Articles</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link active bg-black" href="contact.html">Contact Us</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- The text of the header section -->
+            <div class="position-absolute start-50 translate-middle text-center text-white" id="hero-text">
+                <h1 class="display-1 fw-bold mb-3">Contact Us</h1>
+            </div>
+        </section>
+
+        <!-- Contact Form and Information Section -->
+        <section class="p-5">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <!-- Contact Information Section -->
+
+                    <div class="col-md-4 mb-5">
+
+                        <h2 class="mb-5">Contact Information</h2>
+
+                        <!-- Address -->
+                        <div class="d-flex align-items-start mb-3">
+
+                            <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/contact/icon1.png" alt="Address Icon" class="me-3">
+                            <div>
+                                <h6 class="font-weight-medium">Address</h6>
+                                <p>601 Sherwood Ave.<br> San Bernandino</p>
+                            </div>
+                        </div>
+                        <!-- Phone -->
+                        <div class="d-flex align-items-start mb-3">
+                            <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/contact/icon2.png" alt="Phone Icon" class="me-3">
+                            <div>
+                                <h6 class="font-weight-medium">Phone</h6>
+                                <p>251 546 9442<br> 630 446 8851</p>
+                            </div>
+                        </div>
+                        <!-- Email -->
+                        <div class="d-flex align-items-start mb-3">
+                            <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/contact/icon3.png" alt="Email Icon" class="me-3">
+                            <div>
+                                <h6 class="font-weight-medium">Email</h6>
+                                <p>info@wrappixel.com<br> 123@wrappixel.com</p>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                    <!-- Contact Form Section -->
+                    <div class="col-md-7">
+                        <h2 class="text-center mb-4">Send Us a Message</h2>
+                        <form class="p-4 border rounded shadow" id="contactForm">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="5" placeholder="Your message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-dark w-100">Submit</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div id="successMessage" class="mt-3 text-center text-success" style="display: none;">
+                    Thank you for contacting us! We will get back to you soon.
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <section class="bg-black text-light py-4" id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mb-3 mb-md-0">
+                        <h5 class="mb-3">About Us</h5>
+                        <p class="small">We are a company dedicated to providing excellent services and products to our customers.</p>
+                    </div>
+                    <div class="col-md-6 mb-3 mb-md-0">
+                        <h5 class="mb-3">Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+                            <li><a href="history_pre.html" class="text-light text-decoration-none">The History</a></li>
+                            <li><a href="restaurant.html" class="text-light text-decoration-none">Restaurants</a></li>
+                            <li><a href="cafe.html" class="text-light text-decoration-none">Cafes</a></li>
+                            <li><a href="article.html" class="text-light text-decoration-none">Articles</a></li>
+                            <li><a href="#header-contact" class="text-light text-decoration-none">Contact</a></li>
+                            <li><a href="about.html" class="text-light text-decoration-none">About</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="my-4 bg-secondary" />
+                <p class="text-center">&copy; 2024 Your Company Name. All rights reserved.</p>
+            </div>
+        </section>
+    </section>
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+
+</html>

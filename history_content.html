@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historical Content</title>
+    <!-- The bootstrap.min file -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- The Font Awesome .css -->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- The css file of this page-->
+    <link rel="stylesheet" href="css/Historical_p.css">
+
+    <!-- The Google Font :Gelasio  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        img {
+            width: 500px;
+            height: 400px;
+            object-fit: cover;
+            /* Ensures the image covers the area without distortion */
+            margin: 0 auto;
+            /* Centers the image horizontally */
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="landing position-relative ">
+        <div class="container position-relative">
+            <navabr class="navbar nav-pills navbar-expand-lg position-relative">
+                <div class=" container">
+                    <!-- we use the barnd for the logo as it is the only part that will remain as it -->
+                    <a class="navbar-brand fw-800" href="index.html">Alexandria</a>
+
+                    <!-- navbar-toggler to get the class that will use the js code to trigger the effects
+                data-bs-target to choose the target and  data-bs-toggle to choose the the effect itself
+                -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation">
+
+                        <!-- this span class to get the icon of the burger menu -->
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- collapse navbar-collapse for the collapse effect using the bootstrap -->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+                            <li class="nav-item"><a class="nav-link active bg-black" href="history_pre.html">The
+                                    History</a></li>
+
+                            <!-- we use nav-item as it is stil a nav item as a whole  and we use dropdown to trigger the dropdown effect that we need-->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  dropdown-toggle " role="button" data-bs-toggle="dropdown">
+                                    Services
+                                </a>
+
+                                <!-- the drop down menu  and its items -->
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="restaurant.html">Restaurants</a></li>
+                                    <li><a class="dropdown-item" href="cafe.html">Cafes</a></li>
+                                    <li><a class="dropdown-item" href="article.html">Articels</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+
+                            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </navabr>
+        </div>
+
+        <div class="position-absolute start-50 translate-middle text-center text-white" id="hero-home-text">
+            <div class="container text-center">
+                <h1>Welcome to Alexandria's Historical Places</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card Sections for Each Landmark -->
+    <section class="container p-5 shadow-lg my-5 bg-body rounded">
+        <div class="container m-auto mb-5">
+            <h1 class="section-title m-auto mb-5">Discover the rich history of Alexandria</h1>
+        </div>
+
+        <div class="row">
+            <!-- Section for each card -->
+            <div class="col-md-12 mb-5">
+                <img src="imgs/HistoryPage/Fort Q.jpg" class="img-fluid mx-auto d-block" alt="Qaitbay Fort" />
+                <h2 class="text-center mt-3">Qaitbay Fort</h2>
+                <p class="p-5 lh-base ">
+                    Qaitbay Citadel is one of the most important forts on the coast of the Mediterranean Sea. The Mamluk
+                    sultan al-Ashraf Abu al-Nasr Qaitbay
+                    built it between 882 AH/ 1477 AD and 884/ 1479 AD over the ruins of Alexandria's Lighthouse.
+                    It served as Alexandria'defence against naval attacks.
+                    The citadel was made of limestone and spanned an area of approximately 17550 m2.
+                    An outer wall plotted with defence towers surrounds the building.
+                    An inner wall surrounds the citadel's courtyard and includes a number of rooms some of them used as
+                    barracks and others for storage.
+                    The citadel's entrance leads to the courtyard where we find the main tower located in the northwest.
+                    It consists of a massive three-floored square fort. Its four corners are occupied by half-circular
+                    towers that carry protruding balconies for the defence of the city.
+                    A tank near the tower supplied soldiers and their horses with water.
+                    Qaitbay citadel drew the attention of rulers throughout the ages, on account of its strategic
+                    location.
+                    The building was also enlarged and subject to other conservation operations in 2003.
+                </p>
+                <h5 class="ps-5">Opening Hours:</h5>
+                <p class="ps-5">From 9:00 AM To 7:00 PM</p>
+                <h5 class="ps-5">Tickets:</h5>
+                <p class="ps-5">Adult: 60 EGP/ Student: 30 EGP</p>
+                <h5 class="ps-5">Location:</h5>
+                <p class="ps-5">Qaitbay Fort, Borg Rashid, Rosetta, Beheira Governorate 22746</p>
+            </div>
+
+            <div class="col-md-12 mb-5">
+                <img src="imgs/HistoryPage/Montazah Palace.jpg" class="img-fluid mx-auto d-block"
+                    alt="Montaza Palace" />
+                <h2 class="text-center mt-3">Montaza Palace</h2>
+                <p class="p-5 lh-base">
+                    The extensive Montaza Palace grounds first had the Salamlek Palace, built in 1892 by Khedive Abbas
+                    II,
+                    the last Muhammad Ali Dynasty ruler to hold the Khedive title over the Khedivate of Egypt and Sudan.
+                    It was used as a hunting lodge and residence for his companion.
+                    The larger El-Haramlek Palace and royal gardens were added to the Montaza Palace grounds,
+                    being built by King Fuad I in 1932, as a summer palace. It is in a mixture of Ottoman and Florentine
+                    styles, with two towers.
+                    One of these towers rises distinctively high above with elaborated Italian Renaissance design
+                    details.
+                    The palace has long open arcades facing the sea along each floor.
+                </p>
+                <h5 class="ps-5">Opening Hours:</h5>
+                <p class="ps-5">From 8:00 AM To 12:00 AM</p>
+                <h5 class="ps-5">Tickets:</h5>
+                <p class="ps-5">Adult: 30 EGP</p>
+                <h5 class="ps-5">Location:</h5>
+                <p class="ps-5">Montaza Palace, El-Gaish Rd, Al Mandarah Bahri, Montaza 2, Alexandria Governorate
+                    5527001</p>
+            </div>
+
+            <div class="col-md-12 mb-5">
+                <img src="imgs/HistoryPage/National Museum Alex.jpg" class="img-fluid mx-auto d-block"
+                    alt="National Museum" />
+                <h2 class="text-center mt-3">National Museum</h2>
+                <p class="p-5 lh-base">
+                    The museum is located in a former Italianate mansion. It's the former home of a wood sales person.
+                    It used to house the United States consulate. The building dates back to 1926, located around a
+                    large garden,
+                    in addition to housing a basement. The three-storey palace was a meeting place for the Egyptian
+                    upper-class society of Alexandria.
+                    The Alexandria National Museum contains around 1,800 artifacts that narrate the story of Alexandria
+                    and Egypt.<br />
+                    Most of these pieces came from other Egyptian museums. The museum mainly focuses on three
+                    collections spread over three floors:<br />
+                    Floor 1: Pharaonic epoch. The mummies are shown in a recreation of a funerary chamber.<br />
+                    Floor 2: Artifacts from the Hellenistic period and Roman period, including pieces from Heraklion and
+                    Canopus.
+                    Objects include canopic jars, and pieces from the rule of Nectanebo II.
+                    Objects include pieces of Caracalla, figures of Medusa, a mosaic portrait, representing Queen
+                    Berenice II wife of Ptolemy III. <br />
+                    Floor 3: Ancient Egyptian, Coptic, and the Muslim world as well as 19th and 20th century.
+                    The city of Alexandria is also included in the collection.<br />
+                    A highlight for many visitors is a sculpture believed to be of the VP city's namesake, Alexander the
+                    Great.<br />
+                    The museum also has a collection of jewelry, weapons, statuary, numismatics and glassware.<br />
+                </p>
+                <h5 class="ps-5">Opening Hours:</h5>
+                <p class="ps-5">From 9:00 AM To 5:00 PM</p>
+                <h5 class="ps-5">Tickets:</h5>
+                <p class="ps-5">Adult: 20 EGP / Student: 5 EGP</p>
+                <h5 class="ps-5">Location:</h5>
+                <p class="ps-5">National Museum, 131 El-Shaheed Galal El-Desouky, Bab Sharqi WA Wabour Al Meyah, Bab
+                    Sharqi</p>
+            </div>
+            <div class="col-md-12 mb-5">
+                <img src="imgs/HistoryPage/Roman Theater.jpg" class="img-fluid mx-auto d-block"
+                    alt="Ancient Roman Theater" />
+                <h2 class="text-center mt-3">Ancient Roman Theater</h2>
+                <p class="p-5 lh-base">The Roman Amphitheater Alexandria is one of the most popular monuments in
+                    Alexandria City .
+                    Alexandria is the second most important city in Egypt after Cairo .
+                    Amphitheaters quite spread during the reign of the Romans.
+                    They were in different countries like Greece, Italy, and Turkey. They are present in many regions
+                    around Europe and the Middle East.
+                    Roman Amphitheater Alexandria is the only one of its type in Egypt .
+                    The word “Kom El Dekka” in Arabic, means the hill of rubble or the hill of the benches.
+                    It named when a famous historian, El Neweiry, passed by this area in the beginning of the 20th
+                    century .
+                    El Neweiry saw the many piles of rubble and sand. The formed due to the digging of the Mahmoudeyya
+                    Canal at the end of the 19th century.
+                    The canal linked Alexandria to the Nile River. These piles looked exactly like some huge benches.
+                    El Neweiry was the one who gave the area its recent famous name.
+                    The Roman Amphitheater Alexandria indeed is one of the most important Roman architectural
+                    achievements in Egypt .
+                    It was by mere coincidence in 1960. The workers went to remove a pile of dust and sand in 1960.
+                    It was to clear the land and construct a governmental building.
+                    They found some solid iron columns while digging into the ground.</p>
+                <h5 class="ps-5">Opening Hours:</h5>
+                <p class="ps-5">From 8:00 AM To 5:00 PM</p>
+                <h5 class="ps-5">Tickets</h5>
+                <p class="ps-5">Adult: 30 EGP </p>
+                <h5 class="ps-5">Location:</h5>
+                <p class="ps-5">Ismail Mahana Road, Kom Ad Dakah Gharb, Al Attarin, Alexandria Governorate 21517</p>
+            </div>
+            <div class="col-md-12 mb-5">
+                <img src="imgs/HistoryPage/Bibliotheca Alexandria.jpg" class="img-fluid mx-auto d-block"
+                    alt="Bibliotheca Alexandrina" />
+                <h2 class="text-center mt-3">Bibliotheca Alexandrina</h2>
+                <p class="p-5 lh-base">
+                    The Bibliotheca Alexandrina is a major library and cultural center on the shore of the Mediterranean
+                    Sea in Alexandria, Egypt.
+                    It is a commemoration of the Library of Alexandria, once one of the largest libraries worldwide,
+                    which was lost in antiquity.
+                    The Bibliotheca Alexandrina contains books in classical Arabic, English, and French languages.
+                    <br />
+                    The idea of reviving the old library dates back to 1974 when a committee set up by Alexandria
+                    University selected
+                    a plot of land for its new library. Construction work began in 1995, and after some US$220 million
+                    had been spent,
+                    the complex was officially inaugurated on 16 October 2002.
+                    In 2009, the library received a donation of 500,000 books from the Bibliothèque nationale de France
+                    (BnF).
+                    The gift makes the Bibliotheca Alexandrina the sixth-largest Francophone library in the world.<br />
+
+                    The library offers shelf space for eight million books, and its main reading room spans 20,000
+                    square meters (220,000 sq ft).
+                    The complex also houses a conference center; specialized libraries for maps, multimedia, the blind
+                    and visually impaired,
+                    and for children; four museums; four art galleries four temporary exhibitions; 15 permanent
+                    exhibitions; a planetarium;
+                    and a manuscript restoration laboratory.
+                </p>
+                <h5 class="ps-5">Opening Hours:</h5>
+                <p class="ps-5">From 8:00 AM To 7:00 PM</p>
+                <h5 class="ps-5">Tickets:</h5>
+                <p class="ps-5">Adult: 25 EGP / Student: 5 EGP</p>
+                <h5 class="ps-5">Location:</h5>
+                <p class="ps-5">Al Shatby, Bab Sharqi, Alexandria Governorate 21526</p>
+            </div>
+            <div class="col-md-12 mb-5">
+                <img src="imgs/HistoryPage/AlexRoyalJewelleryMusLeft.jpg" class="img-fluid mx-auto d-block"
+                    alt="Royal Jewelry Museum" />
+                <h2 class="text-center mt-3">Royal Jewelry Museum</h2>
+                <p class="p-5 lh-base">
+                    The museum houses major jewelry pieces and art acquisitions of the dynasty of Muhammad Ali and
+                    his descendants, who ruled Egypt for nearly 150 years from 1805 until the 1952 movement.
+                    The mother of Princess Fatima had completed the construction of the western wing before her death,
+                    when her daughter had reached the age of eighteen.
+                    Princess Fatima added an eastern wing to the palace and linked the two wings with a beautiful
+                    corridor.
+                    The Palace remained in use for summer residence until July 1952. When the princess's property was
+                    confiscated,
+                    she was allowed to reside in the palace. This was until 1964, when Princess Fatima al-Zahra' "ceded"
+                    the palace to the Egyptian
+                    government and left for Cairo. Princess Fatima al-Zahra died in 1983. <br />
+
+                    The museum was renovated and developed in 1986 and 1994.
+                    Since late 2004, the Supreme Council of Antiquities has begun a comprehensive development and
+                    restoration process for
+                    the museum at an estimated cost of 10 million Egyptian pounds, with the aim of increasing its
+                    capacity to accommodate
+                    more valuable exhibits in stores that have not yet been displayed, and the museum was opened in
+                    April 2010.
+                </p>
+                <h5 class="ps-5">Opening Hours:</h5>
+                <p class="ps-5">From 8:00 AM To 5:00 PM</p>
+                <h5 class="ps-5">Tickets:</h5>
+                <p class="ps-5">Adult: 20 EGP / Student: 5 EGP </p>
+                <h5 class="ps-5">Location:</h5>
+                <p class="ps-5">Qaitbay Fort, Borg Rashid, Rosetta, Beheira Governorate 22746</p>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="bg-black text-light py-5" style="height: fit-content;" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5 class="mb-3">About Us</h5>
+                    <p class="small">We are a company dedicated to providing excellent services and products to our
+                        customers.
+                    </p>
+                </div>
+
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5 class="mb-3">Quick Links</h5>
+
+                    <ul class="list-unstyled">
+                        <li><a href="#header-home" class="text-light text-decoration-none">Home</a></li>
+
+                        <li><a href="history_pre.html" class="text-light text-decoration-none">The History</a></li>
+
+                        <li><a href="restaurant.html" class="text-light text-decoration-none">Restaurants</a></li>
+
+                        <li><a href="cafe.html" class="text-light text-decoration-none">Cafes</a></li>
+
+                        <li><a href="article.html" class="text-light text-decoration-none">Articels</a></li>
+
+                        <li><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+
+                        <li><a href="about.html" class="text-light text-decoration-none">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <h5 class="mb-3">Contact Us</h5>
+                    <p class="small mb-0">Alexandria, Egypt</p>
+                    <p class="small mb-0">Phone: (+20) Some Number</p>
+                    <p class="small mb-0">Email: info@example.com</p>
+                </div>
+            </div>
+
+            <hr class="my-4 bg-secondary" />
+
+            <p class="text-center">
+                &copy; 2024 Your Company Name. All rights reserved.
+            </p>
+        </div>
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8' />
+    <title>Alexandria</title>
+
+    <!-- to make sure the botostarp is responsive -->
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+
+    <!-- looding the bootstrap files -->
+    <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap.css' />
+
+    <!-- loodijng my own css file -->
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css' />
+
+</head>
+
+<body>
+    <section id="outer">
+        <!-- position-relative to be able to placethe text where we want -->
+        <section id="header-home" class="position-relative">
+            <!-- The navabr we use navabr-pill for the button look a like effect navbar-expand for the respovive behaviour -->
+            <nav class="navbar nav-pills navbar-expand-lg">
+                <div class=" container">
+
+                    <!-- we use the barnd for the logo as it is the only part that will remain as it -->
+                    <a class="navbar-brand fw-800" href="#header-home">Alexandria</a>
+
+                    <!-- navbar-toggler to get the class that will use the js code to trigger the effects
+                    data-bs-target to choose the target and  data-bs-toggle to choose the the effect itself
+                    -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation">
+
+                        <!-- this span class to get the icon of the burger menu -->
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- collapse navbar-collapse for the collapse effect using the bootstrap -->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link active bg-black" href="#home">Home</a></li>
+
+                            <li class="nav-item"><a class="nav-link" href="history_pre.html">The History</a></li>
+
+                            <!-- we use nav-item as it is stil a nav item as a whole  and we use dropdown to trigger the dropdown effect that we need-->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  dropdown-toggle" role="button" data-bs-toggle="dropdown">
+                                    Services
+                                </a>
+
+                                <!-- the drop down menu  and its items -->
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="restaurant.html">Restaurants</a></li>
+                                    <li><a class="dropdown-item" href="cafe.html">Cafes</a></li>
+                                    <li><a class="dropdown-item" href="article.html">Articels</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+
+                            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- The text of the header section-->
+            <div class="position-absolute start-50 translate-middle text-center text-white" id="hero-home-text">
+                <h1 class="display-1 fw-bold mb-3">Welcome to Alexandria</h1>
+                <p class="lead mb-4 display-6">The Queen of The Mediterranean Sea</p>
+                <a href="Restaurant_page.html" class="btn btn-dark btn-lg">Learn More</a>
+            </div>
+        </section>
+
+        <!-- The Histroical Places Section y shbab -->
+        <section class="container p-5 shadow-lg my-5 bg-body rounded" id="history">
+            <div class="container p-3">
+                <h1 class="section-title m-auto mb-5">Explore Our City's Rich History</h1>
+
+                <!-- diving the the section into one row so that we can align items Easily -->
+                <div class="row">
+                    <!-- diving the cols into 4 mids -->
+                    <div class="col-md-4 mt-3">
+                        <!-- using the card to get a card and place-card for animations-->
+                        <div class="card w-100 place-card">
+                            <img src="imgs/HomePage/New-Museum.png" class="card-img-top" alt="Alexandria National Museum" />
+
+                            <div class="card-body">
+                                <h5 class="card-title">Alexandria National Museum</h5>
+                                <p class="card-text">Step into The History of our city, surrounded by centuries-old architecture and vibrant culture.</p>
+                                <a href="history_pre.html" class="btn btn-dark">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Repeating the card -->
+                    <div class="col-md-4 mt-3">
+                        <div class="card w-100 place-card">
+                            <img src="imgs/HomePage/Bibliotheca-Alexandrina.png" class="card-img-top" alt="Bibliotheca Alexandrina" />
+
+                            <div class="card-body">
+                                <h5 class="card-title">Bibliotheca Alexandrina</h5>
+                                <p class="card-text">The New Bibliotheca Alexandrina, Honoring The Greatest Library of History.
+                                </p>
+                                <a href="history_pre.html" class="btn btn-dark">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Repeating the card -->
+                    <div class="col-md-4 mt-3">
+                        <div class="card w-100 place-card">
+                            <img src="imgs/HomePage/Fort-Qaitbey.png" class="card-img-top" alt="Fort Qaitbey" />
+
+                            <div class="card-body">
+                                <h5 class="card-title">Fort Qaitbey</h5>
+                                <p class="card-text">Explore the fortified walls and grand halls of our city's medieval stronghold, rich with tales of the past.</p>
+                                <a href="history_pre.html" class="btn btn-dark">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="display-3 text-center text-black m-auto mb-1 fw-bold">
+                        Travel In Time, Live The History
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The section about the restaurants is the same as the last one but with a twist ahahahahahah -->
+        <section class="container p-5 shadow-lg my-5 bg-body rounded" id=" oriantles">
+            <div class="container" id="in-original">
+                <h1 class="section-title m-auto mb-5 text-black">Taste The History</h1>
+
+                <!-- diving the the section into one row so that we can align items Easily -->
+                <div class="row">
+                    <!-- diving the cols into 4 mids -->
+                    <div class="col-md-6 mt-3 mycol">
+                        <!-- using the card to get a card and place-card for animations-->
+                        <div class="card w-100 place-card">
+                            <img src="imgs/HomePage/koshary.png" class="card-img-top" alt="Koshary" />
+
+                            <div class="card-body">
+                                <h5 class="card-title">Restaurants</h5>
+                                <p class="card-text">Enjoy Food.</p>
+                                <a href="restaurant.html" class="btn btn-dark">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Repeating the card -->
+                    <div class="col-md-6 mt-3 mycol">
+                        <div class="card w-100 place-card">
+                            <img src="imgs/HomePage/cafe.jpg" class="card-img-top" alt="Cafes" />
+
+                            <div class="card-body">
+                                <h5 class="card-title">Cafes</h5>
+                                <p class="card-text">Enjoy Drinks.</p>
+                                <a href="cafe.html" class="btn btn-dark">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Repeating the card -->
+                    <!-- <div class="col-md-4 mt-3 mycol">
+                        <div class="card w-100 place-card">
+                            <img src="imgs/HomePage/romantik.jpg" class="card-img-top" alt="Romantik" />
+
+                            <div class="card-body">
+                                <h5 class="card-title">Romantik</h5>
+                                <p class="card-text">Enjoy The Perfect Date.</p>
+                                <a href="Restaurant_page.html" class="btn btn-dark">Learn More</a>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+
+                <div class="row  mt-5">
+                    <div class="display-3 text-center text-black m-auto fw-bold fst-italic">
+                        Taste Alexandria
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Articels Section Start which is the same as the previous section-->
+        <section class="container p-5 shadow-lg my-5 bg-body rounded" id="articals">
+            <div class="container p-3">
+                <h1 class="section-title m-auto mb-5">The Articels</h1>
+
+                <!-- diving the the section into one row so that we can align items Easily -->
+                <div class="row">
+                    <!-- diving the cols into 4 mids -->
+                    <div class="col-md-4 mt-3">
+                        <!-- using the card to get a card and place-card for animations-->
+                        <div class="card w-100 place-card">
+                            <img src="imgs/HomePage/people.jpg" class="card-img-top" alt="The People Of Alexandria" />
+
+                            <div class="card-body">
+                                <h5 class="card-title">The Alexandrian People</h5>
+                                <p class="card-text">Kind People.</p>
+                                <a href="article-page.html" class="btn btn-dark">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Repeating the card -->
+                    <div class="col-md-4 mt-3">
+                        <div class="card w-100 place-card">
+                            <img src="imgs/HomePage/culture.jpg" class="card-img-top" alt="The Culture" />
+
+                            <div class="card-body">
+                                <h5 class="card-title">The Culture</h5>
+                                <p class="card-text">The Unique Culture Of Alexandria.</p>
+                                <a href="article-page.html" class="btn btn-dark">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Repeating the card -->
+                    <div class="col-md-4 mt-3">
+                        <div class="card w-100 place-card">
+                            <img src="imgs/HomePage/weather.png" class="card-img-top" alt="The Weather" />
+
+                            <div class="card-body">
+                                <h5 class="card-title">The Weather</h5>
+                                <p class="card-text">Explore the Refreshing Weather Of Alexandria</p>
+                                <a href="article-page.html" class="btn btn-dark">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="display-3 text-center text-black m-auto mb-1 fw-bold">
+                        Sea The Difference, Gain Wisdom
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Footer Section -->
+        <section class="bg-black text-light py-5" style="height: fit-content;" id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <h5 class="mb-3">About Us</h5>
+                        <p class="small">We are a company dedicated to providing excellent services and products to our customers.
+                        </p>
+                    </div>
+
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <h5 class="mb-3">Quick Links</h5>
+
+                        <ul class="list-unstyled">
+                            <li><a href="#header-home" class="text-light text-decoration-none">Home</a></li>
+
+                            <li><a href="history_pre.html" class="text-light text-decoration-none">The History</a></li>
+
+                            <li><a href="restaurant.html" class="text-light text-decoration-none">Restaurants</a></li>
+
+                            <li><a href="cafe.html" class="text-light text-decoration-none">Cafes</a></li>
+
+                            <li><a href="article.html" class="text-light text-decoration-none">Articels</a></li>
+
+                            <li><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+
+                            <li><a href="about.html" class="text-light text-decoration-none">About</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h5 class="mb-3">Contact Us</h5>
+                        <p class="small mb-0">Alexandria, Egypt</p>
+                        <p class="small mb-0">Phone: (+20) Some Number</p>
+                        <p class="small mb-0">Email: info@example.com</p>
+                    </div>
+                </div>
+
+                <hr class="my-4 bg-secondary" />
+
+                <p class="text-center">
+                    &copy; 2024 Your Company Name. All rights reserved.
+                </p>
+            </div>
+        </section>
+    </section>
+
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

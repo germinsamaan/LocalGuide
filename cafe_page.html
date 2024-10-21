@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Haven - Food Delivery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- looding the bootstrap files -->
+    <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap.css' />
+
+    <!-- loodijng my own css file -->
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css' />
+
+    <style>
+        #header-restaurant {
+            background-image: url(imgs/RestaurantPage/GourmetHavenRestaurant.png);
+        }
+
+        #hero-restaurant-text {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .menu-card {
+            height: 100%;
+            transition: transform 0.3s;
+        }
+
+        .menu-card:hover {
+            transform: scale(1.03);
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="header-restaurant" class="position-relative">
+        <!-- The navabr we use navabr-pill for the button look a like effect navbar-expand for the respovive behaviour -->
+        <navabr class="navbar nav-pills navbar-expand-lg">
+            <div class=" container">
+
+                <!-- we use the barnd for the logo as it is the only part that will remain as it -->
+                <a class="navbar-brand fw-800" href="index.html">Alexandria</a>
+
+                <!-- navbar-toggler to get the class that will use the js code to trigger the effects
+                 data-bs-target to choose the target and  data-bs-toggle to choose the the effect itself
+                -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation">
+
+                    <!-- this span class to get the icon of the burger menu -->
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- collapse navbar-collapse for the collapse effect using the bootstrap -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="history_pre.html">The History</a></li>
+
+                        <!-- we use nav-item as it is stil a nav item as a whole  and we use dropdown to trigger the dropdown effect that we need-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle active bg-black" role="button"
+                                data-bs-toggle="dropdown">
+                                Services
+                            </a>
+
+                            <!-- the drop down menu  and its items -->
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="restaurant.html">Restaurants</a></li>
+                                <li><a class="dropdown-item" href="cafe.html">Cafes</a></li>
+                                <li><a class="dropdown-item" href="article.html">Articels</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </navabr>
+
+        <!-- The text of the header section-->
+        <div class="position-absolute start-50 translate-middle text-center text-white" id="hero-text">
+            <h1 class="display-1 fw-bold mb-3">Gourmet Haven</h1>
+        </div>
+    </section>
+
+    <main>
+        <section class="py-5" id="menu">
+            <div class="container">
+                <h2 class="section-title mb-4">Our Menu</h2>
+                <div class="row g-4">
+
+                    <div class="col-md-4">
+                        <div class="card menu-card">
+                            <img src="imgs/RestaurantPage/Appetizers.png" class="card-img-top" alt="Appetizers">
+                            <div class="card-body">
+                                <h5 class="card-title">Appetizers</h5>
+                                <p class="card-text">Start your meal with our delightful appetizers.</p>
+                                <a href="#" class="btn btn-dark" data-bs-toggle="modal"
+                                    data-bs-target="#appetizersModal">View Dishes</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card menu-card">
+                            <img src="imgs/RestaurantPage/MainCourses.png" class="card-img-top" alt="Main Courses">
+                            <div class="card-body">
+                                <h5 class="card-title">Main Courses</h5>
+                                <p class="card-text">Delicious entrees prepared with the finest ingredients.</p>
+                                <a href="#" class="btn btn-dark" data-bs-toggle="modal"
+                                    data-bs-target="#mainCoursesModal">View Dishes</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card menu-card">
+                            <img src="imgs/RestaurantPage/Desserts.png" class="card-img-top" alt="Desserts">
+                            <div class="card-body">
+                                <h5 class="card-title">Desserts</h5>
+                                <p class="card-text">Indulge in our heavenly dessert selection.</p>
+                                <a href="#" class="btn btn-dark" data-bs-toggle="modal"
+                                    data-bs-target="#dessertsModal">View Dishes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 bg-light" id="info">
+            <div class="container">
+                <h2 class="section-title mb-4">Restaurant Information</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>About Gourmet Haven</h3>
+                        <p>Gourmet Haven offers an exquisite culinary experience with innovative dishes created by our
+                            passionate chefs using the finest locally-sourced ingredients.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Opening Hours</h3>
+                        <ul class="list-unstyled">
+                            <li>Monday - Thursday: 5:00 PM - 10:00 PM</li>
+                            <li>Friday - Saturday: 5:00 PM - 11:00 PM</li>
+                            <li>Sunday: 4:00 PM - 9:00 PM</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5" id="contact">
+            <div class="container">
+                <h2 class="section-title mb-4">Contact Us</h2>
+                <div class="row justify-conten">
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="card-text">Phone: (123) 456-7890</p>
+                                <p class="card-text">Email: info@gourmethaven.com</p>
+                                <p class="card-text">Address: 123 Gourmet Street, Foodie City, FC 12345</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="bg-black text-light py-5" style="height: fit-content;" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5 class="mb-3">About Us</h5>
+                    <p class="small">We are a company dedicated to providing excellent services and products to our
+                        customers.
+                    </p>
+                </div>
+
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5 class="mb-3">Quick Links</h5>
+
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+
+                        <li><a href="history_pre.html" class="text-light text-decoration-none">The History</a></li>
+
+                        <li><a href="restaurant.html" class="text-light text-decoration-none">Restaurants</a></li>
+
+                        <li><a href="cafe.html" class="text-light text-decoration-none">Cafes</a></li>
+
+                        <li><a href="article.html" class="text-light text-decoration-none">Articels</a></li>
+
+                        <li><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+
+                        <li><a href="about.html" class="text-light text-decoration-none">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <h5 class="mb-3">Contact Us</h5>
+                    <p class="small mb-0">Alexandria, Egypt</p>
+                    <p class="small mb-0">Phone: (+20) Some Number</p>
+                    <p class="small mb-0">Email: info@example.com</p>
+                </div>
+            </div>
+
+            <hr class="my-4 bg-secondary" />
+
+            <p class="text-center">
+                &copy; 2024 Your Company Name. All rights reserved.
+            </p>
+        </div>
+    </section>
+
+    <!-- Modals for menu items -->
+    <div class="modal fade" id="mainCoursesModal" tabindex="-1" aria-labelledby="mainCoursesModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="mainCoursesModalLabel">Main Courses</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row mb-3">
+                        <div class="col-8">
+                            <h6 class="mb-0">Grilled Salmon</h6>
+                            <small class="text-muted">Fresh Atlantic salmon with roasted vegetables</small>
+                        </div>
+                        <div class="col-4 text-end">
+                            <p class="mb-0">$24.99</p>
+                            <button class="btn btn-sm btn-outline-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-8">
+                            <h6 class="mb-0">Beef Tenderloin</h6>
+                            <small class="text-muted">Prime beef with truffle mashed potatoes</small>
+                        </div>
+                        <div class="col-4 text-end">
+                            <p class="mb-0">$29.99</p>
+                            <button class="btn btn-sm btn-outline-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-8">
+                            <h6 class="mb-0">Vegetarian Risotto</h6>
+                            <small class="text-muted">Creamy Arborio rice with seasonal vegetables</small>
+                        </div>
+                        <div class="col-4 text-end">
+                            <p class="mb-0">$19.99</p>
+                            <button class="btn btn-sm btn-outline-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="appetizersModal" tabindex="-1" aria-labelledby="appetizersModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="appetizersModalLabel">Appetizers</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row mb-3">
+                        <div class="col-8">
+                            <h6 class="mb-0">Bruschetta</h6>
+                            <small class="text-muted">Toasted bread topped with fresh tomatoes and basil</small>
+                        </div>
+                        <div class="col-4 text-end">
+                            <p class="mb-0">$8.99</p>
+                            <button class="btn btn-sm btn-outline-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-8">
+                            <h6 class="mb-0">Calamari</h6>
+                            <small class="text-muted">Crispy fried squid with lemon aioli</small>
+                        </div>
+                        <div class="col-4 text-end">
+                            <p class="mb-0">$12.99</p>
+                            <button class="btn btn-sm btn-outline-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-8">
+                            <h6 class="mb-0">Caprese Salad</h6>
+                            <small class="text-muted">Fresh mozzarella, tomatoes, and basil with balsamic glaze</small>
+                        </div>
+                        <div class="col-4 text-end">
+                            <p class="mb-0">$10.99</p>
+                            <button class="btn btn-sm btn-outline-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="dessertsModal" tabindex="-1" aria-labelledby="dessertsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="dessertsModalLabel">Desserts</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row mb-3">
+                        <div class="col-8">
+                            <h6 class="mb-0">Chocolate Lava Cake</h6>
+                            <small class="text-muted">Warm chocolate cake with a molten center</small>
+                        </div>
+                        <div class="col-4 text-end">
+                            <p class="mb-0">$9.99</p>
+                            <button class="btn btn-sm btn-outline-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-8">
+                            <h6 class="mb-0">Crème Brûlée</h6>
+                            <small class="text-muted">Classic French dessert with caramelized sugar</small>
+                        </div>
+                        <div class="col-4 text-end">
+                            <p class="mb-0">$8.99</p>
+                            <button class="btn btn-sm btn-outline-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-8">
+                            <h6 class="mb-0">Fruit Tart</h6>
+                            <small class="text-muted">Buttery pastry filled with custard and fresh fruits</small>
+                        </div>
+                        <div class="col-4 text-end">
+                            <p class="mb-0">$7.99</p>
+                            <button class="btn btn-sm btn-outline-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
